@@ -1,0 +1,111 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+table {
+    border-spacing: 10px;
+    margin: auto;
+}
+
+td {
+    text-align: left;
+}
+
+h1 {
+    color: #ff6f61;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.members {
+    background-color: #f3f3f3;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.members h3 {
+    color: #555;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    color: #444;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    li {
+        font-size: 1rem;
+    }
+}
+
+/* Tombol Navigasi */
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff6f61;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #ff856c;
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    transform: translateY(0px);
+}
+
+@media (max-width: 600px) {
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}

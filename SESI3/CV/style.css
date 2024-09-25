@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: sans-serif;
+    width: 900px;
+}
+
+@media only screen and (max-width: 768px) {
+    #main-container {
+      max-width: 500px; 
+      margin: 20px auto; 
+    } }
+
+/*container style*/
+
+#main-container {
+    width: 700px;
+    line-height: 1.6;
+}
+
+#container {
+    background-color: gray;
+    color: white;
+    width: 340px;
+    float: left;
+    text-align: justify;
+}
+
+/*Header style*/
+
+#header-container {
+    border-bottom: 1px solid lightgrey;
+    padding: 3px;
+}
+
+#header-container h2 {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+#header-container img {
+    background-color: white;
+    border: 2px solid white;
+    width: 150px;
+    padding: 2px;
+    margin: 50px;
+}
+
+#header-container p {
+    width: 280px;
+    padding: 10px;
+    margin-right: 9px;
+}
+
+/*list style*/
+
+.list {
+    padding: 10px;
+}
+
+.list li {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: lightgray;
+    color: black;
+    padding: 7px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.list p {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 19px;
+}
+
+/* my-list style */
+
+.my-list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: justify;
+  }
+  
+  .my-list > div {
+    margin-bottom: 20px;
+  }
+  
+  .my-list section {
+    background-color: gray;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 25px;
+    padding:12px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    width: 650px;
+  }
+  
+  .my-list ul, .my-list ol {
+    margin: 20px;
+    width: 600px;
+    margin-left: 20px;
+  }
+  
+  .my-list li {
+    margin-bottom: 10px;
+    margin-left: 22px;
+  }
+  
+  .my-list li ul {
+    margin-left: 20px;
+  }
+
+#clear-fix {
+    clear: both;
+}

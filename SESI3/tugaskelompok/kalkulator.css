@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 15px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #f3f3f3;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+input[type="button"] {
+    padding: 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff6f61;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #ff856c;
+    transform: translateY(-3px);
+}
+
+input[type="button"]:active {
+    background-color: #ff6f61;
+    transform: translateY(0px);
+}
+
+@media (max-width: 400px) {
+    input[type="text"] {
+        font-size: 1.5rem;
+    }
+
+    input[type="button"] {
+        font-size: 1.2rem;
+    }
+}
+
+/* style button */
+
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.button-container {
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff6f61;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #ff856c;
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    transform: translateY(0px);
+}
+
+@media (max-width: 600px) {
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
